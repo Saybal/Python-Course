@@ -5,3 +5,9 @@ class Student:
         self.department = department
         self.CGPA = CGPA
         self.isEnrolled = isEnrolled
+    
+    def is_honour_roll(self): #Class function
+        if self.CGPA >= 3.5:
+            return True
+        else:
+            return False
