@@ -20,9 +20,9 @@ people = {
 #! Setting Our Own Index in StackOverflow dataset
 # df = pd.read_csv('./StackOverflow Developer Survey/survey_results_public.csv', low_memory=False)
 # df.set_index('ResponseId', inplace=True)
-# df = pd.read_csv('./StackOverflow Developer Survey/survey_results_public.csv', low_memory=False, index_col='ResponseId') #We use this also
+# df = pd.read_csv('./StackOverflow Developer Survey/survey_results_public.csv', low_memory=False, index_col='ResponseId') #We can use this also
 # print(df)
-pd.set_option('display.max_colwidth', None)
+pd.set_option('display.max_colwidth', None) #It will show the full text of a column
 df = pd.read_csv('./StackOverflow Developer Survey/survey_results_schema.csv', low_memory=False, index_col='qname')
 print(df.sort_index())
 # print(df.loc['TechEndorse_1', ['question']])

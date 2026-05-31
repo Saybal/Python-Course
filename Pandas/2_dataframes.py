@@ -13,7 +13,7 @@ df = pd.DataFrame(people)
 #? A series is multiple rows of a single column. On the other hand, Dataframe is multiple rows of multiple column,simply a table
 
 # print(df[['first','email']])
-# print(df.columns)
+# print(df.columns) #Shows the name of columns with their datatype.
 # print(df.iloc[1]) # For accessing a specific row
 # print(df.iloc[[1,2]])
 # print(df.iloc[[1,2],2]) # ?df.iloc[[row indexes],[column indexes]]
